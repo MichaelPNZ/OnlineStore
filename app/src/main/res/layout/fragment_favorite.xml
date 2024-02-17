@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ui.catalogScreen.CatalogFragment">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/tbLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            style="@style/StyleFilterButton"
+            android:backgroundTint="@color/white"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:drawableLeft="@drawable/left_arrow_icon"/>
+
+        <TextView
+            style="@style/StyleTitleMedium16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:text="Избранное" />
+    </com.google.android.material.appbar.MaterialToolbar>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginHorizontal="@dimen/space_main"
+       android:orientation="horizontal"
+       android:background="@drawable/shape_background">
+
+       <Button
+           style="@style/StyleEntryButton"
+           android:layout_marginHorizontal="4dp"
+           android:backgroundTint="@color/white"
+           android:layout_width="0dp"
+           android:text="Товары"
+           android:textColor="@color/black"
+           android:layout_height="match_parent"
+           android:layout_weight="1"/>
+
+       <Button
+           style="@style/StyleEntryButton"
+           android:layout_marginHorizontal="4dp"
+           android:backgroundTint="@color/white"
+           android:text="Бренды"
+           android:textColor="@color/grey"
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"/>
+
+   </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvCatalogFavorite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="@dimen/space_main_half"
+        android:layout_marginTop="@dimen/space_main_half"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="2"
+        tools:itemCount="6"
+        tools:listitem="@layout/item_product">
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

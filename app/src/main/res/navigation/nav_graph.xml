@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/catalogFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.onlinestore.ui.loginScreen.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/garbageFragment"
+        android:name="com.example.onlinestore.ui.garbageScreen.GarbageFragment"
+        android:label="fragment_garbage"
+        tools:layout="@layout/fragment_garbage" />
+    <fragment
+        android:id="@+id/generalFragment"
+        android:name="com.example.onlinestore.ui.generelScreen.GeneralFragment"
+        android:label="fragment_general"
+        tools:layout="@layout/fragment_general" />
+    <fragment
+        android:id="@+id/stocksFragment"
+        android:name="com.example.onlinestore.ui.stocksScreen.StocksFragment"
+        android:label="fragment_stocks"
+        tools:layout="@layout/fragment_stocks" />
+    <fragment
+        android:id="@+id/catalogFragment"
+        android:name="com.example.onlinestore.ui.catalogScreen.CatalogFragment"
+        android:label="fragment_catalog"
+        tools:layout="@layout/fragment_catalog" >
+        <action
+            android:id="@+id/action_catalogFragment_to_productFragment"
+            app:destination="@id/productFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/productFragment"
+        android:name="com.example.onlinestore.ui.productScreen.ProductFragment"
+        android:label="fragment_product"
+        tools:layout="@layout/fragment_product" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.onlinestore.ui.profileScreen.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_favoriteFragment"
+            app:destination="@id/favoriteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.example.onlinestore.ui.favoriteScreen.FavoriteFragment"
+        android:label="fragment_favorite"
+        tools:layout="@layout/fragment_favorite" />
+</navigation>

@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">OnlineStore</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="entry">Вход</string>
+    <string name="phone_number">Номер телефона</string>
+    <string name="first_name">Имя</string>
+    <string name="second_name">Фамилия</string>
+    <string name="enter">Войти</string>
+    <string name="enter_text">Нажимая кнопку “Войти”, Вы принимаете</string>
+    <string name="terms_loyalty_program">
+        <u>условия программы лояльности</u>
+    </string>
+    <string name="general_screen">Главный экран</string>
+    <string name="garbage_screen">Экран Корзина</string>
+    <string name="discount_screen">Экран Акции</string>
+    <string name="catalog">Каталог</string>
+    <string name="selected_popular">По популярности</string>
+    <string name="filters">Фильтры</string>
+    <string name="see_all">Смотреть все</string>
+    <string name="face">Лицо</string>
+    <string name="body">Тело</string>
+    <string name="tan">Загар</string>
+    <string name="masks">Маски</string>
+</resources>
