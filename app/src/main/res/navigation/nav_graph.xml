@@ -5,11 +5,7 @@
     android:id="@+id/nav_graph"
     app:startDestination="@id/catalogFragment">
 
-    <fragment
-        android:id="@+id/loginFragment"
-        android:name="com.example.onlinestore.ui.loginScreen.LoginFragment"
-        android:label="fragment_login"
-        tools:layout="@layout/fragment_login" />
+
     <fragment
         android:id="@+id/garbageFragment"
         android:name="com.example.onlinestore.ui.garbageScreen.GarbageFragment"

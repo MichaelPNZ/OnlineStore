@@ -75,4 +75,5 @@
         <item name="android:background">?android:attr/selectableItemBackgroundBorderless</item>
         <item name="android:foreground">?android:attr/selectableItemBackground</item>
     </style>
+
 </resources>

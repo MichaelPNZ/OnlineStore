@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Цвет иконки и текста при выборе -->
+    <item android:color="@color/lightPink" android:state_checked="true" />
+    <!-- Цвет иконки и текста при не выборе -->
+    <item android:color="@color/grey" />
+</selector>
