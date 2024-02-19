@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="StyleEntryButton" parent="Widget.Material3.Button">
+        <item name="android:textAppearance">@style/StyleTitleMedium14</item>
+        <item name="android:paddingVertical">0dp</item>
+        <item name="android:paddingHorizontal">0dp</item>
+        <item name="cornerRadius">@dimen/corner_radius_8dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="StyleTitleMedium16" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">16sp</item>
+        <item name="fontFamily">@font/sf_pro_display_medium</item>
+    </style>
+
+    <style name="StyleTitleMedium14" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">14sp</item>
+        <item name="fontFamily">@font/sf_pro_display_medium</item>
+    </style>
+
+    <style name="StyleTitleRegular10" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">10sp</item>
+        <item name="fontFamily">@font/sf_pro_display_medium</item>
+    </style>
+
+</resources>

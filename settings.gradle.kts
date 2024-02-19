@@ -1,5 +1,11 @@
 import org.gradle.api.initialization.resolve.RepositoriesMode
 
+include(":login")
+
+
+include(":core")
+
+
 pluginManagement {
     repositories {
         google()
