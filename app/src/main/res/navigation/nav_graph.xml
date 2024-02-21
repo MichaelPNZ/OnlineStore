@@ -13,7 +13,7 @@
         tools:layout="@layout/fragment_garbage" />
     <fragment
         android:id="@+id/generalFragment"
-        android:name="com.example.onlinestore.ui.generelScreen.GeneralFragment"
+        android:name="com.example.onlinestore.ui.generalScreen.GeneralFragment"
         android:label="fragment_general"
         tools:layout="@layout/fragment_general" />
     <fragment
@@ -28,13 +28,21 @@
         tools:layout="@layout/fragment_catalog" >
         <action
             android:id="@+id/action_catalogFragment_to_productFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popExitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_enter_anim"
             app:destination="@id/productFragment" />
     </fragment>
     <fragment
         android:id="@+id/productFragment"
         android:name="com.example.onlinestore.ui.productScreen.ProductFragment"
         android:label="fragment_product"
-        tools:layout="@layout/fragment_product" />
+        tools:layout="@layout/fragment_product" >
+        <argument
+            android:name="productId"
+            app:argType="string" />
+    </fragment>
     <fragment
         android:id="@+id/profileFragment"
         android:name="com.example.onlinestore.ui.profileScreen.ProfileFragment"
@@ -42,11 +50,43 @@
         tools:layout="@layout/fragment_profile" >
         <action
             android:id="@+id/action_profileFragment_to_favoriteFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popExitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_enter_anim"
             app:destination="@id/favoriteFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_loginFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popExitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_enter_anim"
+            app:destination="@id/loginFragment" />
     </fragment>
     <fragment
         android:id="@+id/favoriteFragment"
         android:name="com.example.onlinestore.ui.favoriteScreen.FavoriteFragment"
         android:label="fragment_favorite"
-        tools:layout="@layout/fragment_favorite" />
+        tools:layout="@layout/fragment_favorite" >
+        <action
+            android:id="@+id/action_favoriteFragment_to_productFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popExitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_enter_anim"
+            app:destination="@id/productFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.onlinestore.ui.loginScreen.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_catalogFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popExitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_enter_anim"
+            app:destination="@id/catalogFragment" />
+    </fragment>
 </navigation>

@@ -10,6 +10,11 @@ import kotlinx.serialization.encodeToString
 import kotlinx.serialization.json.Json
 
 @Serializable
+data class Items(
+    val items: List<Item>
+)
+
+@Serializable
 @Entity
 data class Item(
     @PrimaryKey

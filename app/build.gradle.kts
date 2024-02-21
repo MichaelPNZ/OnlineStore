@@ -48,6 +48,12 @@ dependencies {
 
     implementation("com.tbuonomo:dotsindicator:5.0")
 
+    implementation("com.squareup.moshi:moshi-kotlin:1.12.0")
+    implementation("com.squareup.moshi:moshi:1.15.0")
+    ksp("com.squareup.moshi:moshi-kotlin-codegen:1.15.0")
+    implementation("com.squareup.retrofit2:converter-moshi:2.9.0")
+
+
     implementation("com.redmadrobot:input-mask-android:7.2.4")
     implementation("org.jetbrains.kotlin:kotlin-stdlib:1.9.22")
 

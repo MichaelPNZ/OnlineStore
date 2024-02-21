@@ -18,4 +18,3 @@ dependencyResolutionManagement {
 
 rootProject.name = "OnlineStore"
 include(":app")
-include(":loginscreen")

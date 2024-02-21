@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:orientation="vertical"
-    tools:context="com.example.loginscreen.ui.loginScreen.LoginFragment">
+    tools:context="com.example.onlinestore.ui.profileScreen.ProfileFragment">
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/tbLogin"
@@ -17,7 +17,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Личный кабинет" />
+            android:text="@string/personal_account" />
     </com.google.android.material.appbar.MaterialToolbar>
 
     <LinearLayout
@@ -51,18 +51,18 @@
                 android:layout_weight="1">
 
                 <TextView
+                    android:id="@+id/tvUserName"
                     style="@style/StyleTitleMedium14"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingVertical="2dp"
-                    android:text="Name"/>
+                    android:paddingVertical="2dp" />
 
                 <TextView
+                    android:id="@+id/tvPhoneNumber"
                     style="@style/StyleTitleRegular10"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingVertical="2dp"
-                    android:text="Name"
                     android:textColor="@color/grey"/>
             </LinearLayout>
 
@@ -77,6 +77,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/btnToFavorites"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
@@ -107,6 +108,7 @@
                     android:text="Избранное"/>
 
                 <TextView
+                    android:id="@+id/tvFavoriteCount"
                     style="@style/StyleTitleRegular10"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -296,6 +298,7 @@
         android:layout_weight="1"/>
 
     <Button
+        android:id="@+id/btnExit"
         style="@style/StyleEntryButton"
         android:layout_width="match_parent"
         android:layout_height="51dp"
