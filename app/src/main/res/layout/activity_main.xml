@@ -21,9 +21,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/white"
-        app:itemRippleColor="@android:color/transparent"
         app:itemActiveIndicatorStyle="@color/white"
         app:itemIconTint="@drawable/bottom_nav_color"
+        app:itemRippleColor="@android:color/transparent"
         app:itemTextColor="@drawable/bottom_nav_color"
         app:labelVisibilityMode="labeled"
         app:menu="@menu/menu_main" />

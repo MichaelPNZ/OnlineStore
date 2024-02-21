@@ -21,4 +21,19 @@
     <string name="body">Тело</string>
     <string name="tan">Загар</string>
     <string name="masks">Маски</string>
+    <string name="option_1">По популярности</string>
+    <string name="option_2">По уменьшению</string>
+    <string name="option_3">По возрастанию</string>
+    <string name="favorite">Избранное</string>
+    <string name="product">Товары</string>
+    <string name="brand">Бренды</string>
+    <string name="add_in_recycle">Добавить в корзину</string>
+    <string name="detail">Состав</string>
+    <string name="specifications">Характеристики</string>
+    <string name="description">Описание</string>
+    <string name="personal_account">Личный кабинет</string>
+    <string name="general">Главная</string>
+    <string name="recycle">Корзина</string>
+    <string name="action">Акции</string>
+    <string name="profile">Профиль</string>
 </resources>
