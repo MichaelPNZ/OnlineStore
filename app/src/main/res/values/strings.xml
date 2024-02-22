@@ -36,4 +36,6 @@
     <string name="recycle">Корзина</string>
     <string name="action">Акции</string>
     <string name="profile">Профиль</string>
+    <string name="hide">Скрыть</string>
+    <string name="more">Подробнее</string>
 </resources>

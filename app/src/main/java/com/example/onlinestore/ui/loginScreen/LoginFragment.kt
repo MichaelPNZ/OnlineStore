@@ -214,7 +214,7 @@ class LoginFragment : Fragment() {
 
     private fun openGeneralScreen() {
         findNavController().navigate(
-            LoginFragmentDirections.actionLoginFragmentToCatalogFragment()
+            LoginFragmentDirections.actionLoginFragmentToGeneralFragment()
         )
     }
 }

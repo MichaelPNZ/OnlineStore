@@ -59,7 +59,7 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
-                    app:dotsColor="@color/lightGrey"
+                    app:dotsColor="@color/grey"
                     app:dotsSize="8dp"
                     app:dotsWidthFactor="3"
                     app:selectedDotColor="@color/pink" />
@@ -235,6 +235,7 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/white"
                 android:textAlignment="textStart"
+                android:text="@string/hide"
                 android:textColor="@color/grey" />
 
             <TextView
@@ -286,6 +287,7 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/white"
                 android:textAlignment="textStart"
+                android:text="@string/more"
                 android:textColor="@color/grey" />
 
             <LinearLayout
