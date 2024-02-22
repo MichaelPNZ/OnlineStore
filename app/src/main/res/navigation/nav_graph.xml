@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/catalogFragment">
+    app:startDestination="@id/generalFragment">
 
 
     <fragment
@@ -15,7 +15,11 @@
         android:id="@+id/generalFragment"
         android:name="com.example.onlinestore.ui.generalScreen.GeneralFragment"
         android:label="fragment_general"
-        tools:layout="@layout/fragment_general" />
+        tools:layout="@layout/fragment_general" >
+        <action
+            android:id="@+id/action_generalFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
     <fragment
         android:id="@+id/stocksFragment"
         android:name="com.example.onlinestore.ui.stocksScreen.StocksFragment"
@@ -82,11 +86,7 @@
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action
-            android:id="@+id/action_loginFragment_to_catalogFragment"
-            app:enterAnim="@anim/nav_default_enter_anim"
-            app:exitAnim="@anim/nav_default_exit_anim"
-            app:popExitAnim="@anim/nav_default_exit_anim"
-            app:popEnterAnim="@anim/nav_default_enter_anim"
-            app:destination="@id/catalogFragment" />
+            android:id="@+id/action_loginFragment_to_generalFragment"
+            app:destination="@id/generalFragment" />
     </fragment>
 </navigation>

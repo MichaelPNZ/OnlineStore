@@ -3,6 +3,7 @@ plugins {
     id("org.jetbrains.kotlin.android")
     id("androidx.navigation.safeargs.kotlin")
     kotlin("plugin.serialization")
+    id("kotlin-kapt")
     id("com.google.devtools.ksp") version "1.9.0-1.0.13"
 }
 
@@ -42,19 +43,16 @@ android {
 }
 
 dependencies {
+    implementation("androidx.test:core-ktx:1.5.0")
     val fragment_version = "1.6.2"
     val nav_version = "2.7.7"
     val room_version = "2.6.1"
 
     implementation("com.tbuonomo:dotsindicator:5.0")
 
-    implementation("com.squareup.moshi:moshi-kotlin:1.12.0")
-    implementation("com.squareup.moshi:moshi:1.15.0")
-    ksp("com.squareup.moshi:moshi-kotlin-codegen:1.15.0")
-    implementation("com.squareup.retrofit2:converter-moshi:2.9.0")
+    implementation("com.google.dagger:hilt-android:2.50")
+    kapt("com.google.dagger:hilt-compiler:2.50")
 
-
-    implementation("com.redmadrobot:input-mask-android:7.2.4")
     implementation("org.jetbrains.kotlin:kotlin-stdlib:1.9.22")
 
     implementation("androidx.room:room-runtime:$room_version")
